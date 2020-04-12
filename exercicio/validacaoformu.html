@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <title>lista de tarefas</title>
+    <link rel="stylesheet" href="style3.css"> 
+</head>
+<body>
+    <div class="container">
+        <h3>Fórmulario</h3>
+        <p>  
+            <div id="Nome">   
+            <p class="textoInput">Nome:</p>
+            <input type="text" class="inputdados" id="nome">
+            <div id="erroNome" class="msgErro"></div>
+            </div>    
+            
+            <div id="Sobrenome"> 
+            <p class="textoInput">Sobrenome:</p>
+            <input type="text" class="inputdados" id="sobrenome">
+            <div id="erroSobrenome" class="msgErro"></div>
+            </div>
+            
+            <div id="cpf">
+            <p class="textoInput">CPF:</p>
+            <input type="text" class="inputdados" id="cpf">
+            <div id="erroCpf" class="msgErro"></div>
+            </div>
+
+            <div id="Usuario">
+            <p class="textoInput">Usuário:</p>
+            <input type="text" class="inputdados" id="usuario">
+            <div id="erroUsuario" class="msgErro"></div>
+            </div>
+
+            <div id="Senha">
+            <p class="textoInput">Senha:</p>
+            <input type="password" class="inputdados" id="senha">
+            <div id="erroSenha" class="msgErro"></div>
+            </div>
+
+            <div id="senhaConfirma">
+            <p class="textoInput">Confirme a senha:</p>
+            <input type="password" class="inputdados" id="confirmasenha">
+            <div id="erroCSenha" class="msgErro"></div>
+            </div>
+
+            <button id="enviar" class="inputdados">enviar</button>
+        </p>
+        <ul class="tarefas"></ul>
+    </div>
+<script src="validacaoformulario.js"></script>
+</body>
+</html>
