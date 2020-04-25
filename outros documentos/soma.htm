@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js03_comentario</title>
+<meta http-equiv="Content-Type" content="text/hmtl; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+<h3>Programa de boas vindas!</h3>
+<script type="text/javascript">
+<!--
+/* Objetivo; capturar o nome do usuário e apresentar uma saudação personalizada. Definir as variáveis com o prefixo js_
+para os elementos de entrada: método prompt do objeto window
+para os elementos de saída: método write do objeto document
+*/
+/*definição de viariáveis*/
+var js_n1;
+var js_n2;
+var soma;
+
+/*entrada de dados*/
+js_n1=window.prompt('Informe o primeiro numero: ','Digite aqui');
+js_n2=window.prompt('Informe o segundo numero: ','Digite aqui');
+
+/*processamento dados*/
+js_soma = parseInt(js_n1)+parseInt(js_n2);
+
+/*Saída de dados*/
+document.write('O resultado da soma =' + js_soma); 
+
+//-->
+
+</script>	
+</body>
+</html>

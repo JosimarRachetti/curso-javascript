@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu SITE</title>
+	<meta http-equiv="content-type" content="text/html"; charset=utf-8">
+	<meta charset="utf-8">
+</head>
+<body>
+<h3>Programa de Boas vindas!</h3>
+<p> meu nome é josimar </p>
+
+<!-- Definiç]ao de formulário -->
+
+<form name="FormConcatena" action=" " method="porst">
+	digite o nome..........:<input type="text" name="f_nome" /><br/>
+	digite o sobrenome.........:<input type="text" name="f_sobrenome"/><br/>
+	<input type="button" name="btn_concatena" value="Concatenar" onclick="concatena()"/>
+	<input type="reset" name="btn_cancela" value="Cancelar"/>
+</form>
+
+<script language="javascript">
+/*objetivo capturar nome e sobrenome do usuário, concatenar(juntar) os campos e apresentar uma saudação personalizada
+Elementos de entrada; método form do objeto document
+Elementos de Saída: método alert do objeto window*/
+
+/*Definição das variaveis */
+var js_nome;
+var js_sobrenome;
+var js_nomecompleto;
+function concatena(){
+	/*entrada de dados*/
+	js_nome = document.FormConcatena.f_nome.value;
+	js_sobrenome = document.FormConcatena.f_sobrenome.value;
+
+	/*processamento de dados*/
+	js_nomecompleto = js_nome + ' '+js_sobrenome;
+
+	/*Saída de dados*/
+	window.alert('OL\u00e1' +'     '+ js_nomecompleto);
+}
+//-->
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js04_salario</title>
+<meta http-equiv="Content-Type" content="text/hmtl; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+<h3>Teste If com else</h3>
+
+<script type="text/javascript">
+<!--
+/* Objetivo; Calcular o salário líquido de um funcionário que trabalha por hora(horista).
+para desenvolver o cálculo é necessário ter as seguintes informações
+quantidade de horas trabalhadas no mes
+valor da  hora de trabalho
+percentual de desconto do inss
+informar a classificação salarial
+objetos/metodos utilizados
+entrada window.promet
+saida document.write*/
+/*definição de viariáveis*/
+var js_qtd;
+var js_vht;
+var js_inss;
+var js_tdes;
+var js_sb;
+var js_s1;
+
+
+/*entrada de dados*/
+js_qtd=parseFloat(window.prompt('Informe a quantidade de horas trabalhadas /mês:(135 a 180) ','00'));
+js_vht=parseFloat(window.prompt('Informe o valor da hora trabalhada:(25 a 50) ','00'));
+js_inss=parseFloat(window.prompt('informe o percentual de desconte inss:(5 a 15)','00'))
+
+/*processamento dados*/
+js_sb=js_vht*js_qth;
+js_tdes=(js_inss/100)*js_sb;
+js_sl = js_sb - js_tdes;
+
+/*saida de dados classificação*/
+document.write('Numero 1 digitado='+js_n1);
+document.write('<br>Numero 2 digitado='+js_n2);
+
+
+//-->
+
+</script>	
+</body>
+</html>

@@ -1,0 +1,48 @@
+:root{
+--primeira-cor: rgb(6, 192, 192);/*cria uma variavel para ser usada no css*/
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    background:var(--primeira-cor);/*variavel criada sendo usada*/
+    margin: 0;
+    padding: 0;
+}
+#conta{
+    max-width: 700px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 50px;}
+
+form label,form input,form{
+    display: block;
+    width: 100%;
+    margin:5px 0px;
+    font-size: 15px;
+}
+
+#p1{
+    float: left;
+    width: 290px;
+    margin-bottom: 20px;
+}
+#p2{float: right;
+    width: 300px;
+    margin-bottom: 20px;}
+
+form input:focus{ /* coloca cor na bor quando clica dentro da caixa de input*/
+outline: 1px solid black;
+}
+form button{
+    border: none;
+    background-color: rgb(10, 223, 238);
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+}
+form button:hover{
+    background-color: rgb(10, 150, 238);
+}

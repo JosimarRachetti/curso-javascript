@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js03_comentario</title>
+<meta http-equiv="Content-Type" content="text/hmtl; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+<h3>Teste If com else</h3>
+
+<script type="text/javascript">
+<!--
+/* Objetivo; capturar o nome do usuário e apresentar uma saudação personalizada. Definir as variáveis com o prefixo js_
+para os elementos de entrada: método prompt do objeto window
+para os elementos de saída: método write do objeto document
+*/
+/*definição de viariáveis*/
+var js_n1;
+var js_n2;
+
+
+/*entrada de dados*/
+js_n1=parseInt(window.prompt('Informe o valor do primeiro numero: ','00'));
+js_n2=parseInt(window.prompt('Informe o valor do segundo número: ','00'));
+/*saida de dados classificação*/
+document.write('Numero 1 digitado='+js_n1);
+document.write('<br>Numero 2 digitado='+js_n2);
+
+/*processamento dados*/
+if (js_n1 < js_n2) {
+		document.write('<p><b>Classificaçao em ordem crescente:</b> '+js_n1+' e '+js_n2);
+}else{document.write('<p><b>Classificaçao em ordem crescente:</b> '+js_n2+' e '+js_n1);}
+
+
+
+//-->
+
+</script>	
+</body>
+</html>
