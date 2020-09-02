@@ -1,0 +1,26 @@
+<%- include('includes/header'); %>
+<%#o include traz formatação de outros arquivos para o index, bom para modularização%>
+  <section class="container">
+    <h1>
+      <%#aqui o titulo que foi enviado do homeController esta sendo exibido no html%>
+      <%= titulo %>
+      <br>
+      <%#para controles de fluxo if/else for a tag muda um pouco, o sinal da = sai depois do sinal da porcentagem%>
+      <% numeros.forEach(num =>{ %>
+            <%= num %><br>
+      <% }); %>
+      
+      <%#variavel do middleware%>
+      <%= umaVariavel %>
+
+    </h1>
+    <form action="/" method="POST">
+      <label>Client</label>
+      <input type="text" name="client">
+      <button>submit</button>
+    </form>
+    <script src='./assets/js/bundle.js'></script>
+  </section>
+ 
+</body>
+</html>
