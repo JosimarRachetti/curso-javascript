@@ -1,5 +1,5 @@
 {
-  "name": "aula8",
+  "name": "projeto_agenda",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -28,8 +28,8 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
-    "babel-loader": "^8.0.0",
     "@babel/runtime-corejs3": "^7.9.6",
+    "babel-loader": "^8.0.0",
     "core-js": "^3.6.5",
     "nodemon": "^2.0.4",
     "webpack": "^4.42.0",
