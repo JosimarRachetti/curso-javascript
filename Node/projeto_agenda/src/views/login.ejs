@@ -42,13 +42,14 @@
                         </div>
                         <div class="form-group" >
                             <label>Nome</label>
-                            <input class="form-control" name="nome" aria-describedby="emailHelp" placeholder="digite o nome">
-                            <small id="emailHelp" class="form-text text-muted">Digite seu nome completo.</small>
+                            <input class="form-control" name="nome" aria-describedby="emailHelp" placeholder="digite o seu nome de usuario">
                         </div>
                         <div class="form-group" >
                             <label for="exampleInputPassword1">Senha</label>
                             <input type="password" class="form-control" name="password" placeholder="senha">
+                            <small id="emailHelp" class="form-text text-muted">Minimo de seis caracteres.</small>
                         </div>
+                        <%- include('includes/messages') %>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck2">
                             <label class="form-check-label" for="exampleCheck2">Check me out</label>

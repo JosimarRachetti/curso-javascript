@@ -22,8 +22,9 @@
     <list default="true" id="1125d237-da8e-49b5-ba28-1e1f9345d8a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/loginController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/loginController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login.ejs" afterDir="false" />
     </list>
@@ -52,10 +53,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/models" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Users\josimar.peixoto\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\202.6397.88\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\josimar.peixoto\Desktop\javascript\CursoJavascript\Node\projeto_agenda\src\models" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,6 +79,7 @@
       <workItem from="1598223768911" duration="8434000" />
       <workItem from="1598456757678" duration="131000" />
       <workItem from="1599007578523" duration="2975000" />
+      <workItem from="1599069885050" duration="13063000" />
     </task>
     <servers />
   </component>
@@ -100,13 +107,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598456887954" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1597019172395">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1599078932816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1597019172395" />
-    <state x="339" y="17" width="670" height="676" key="search.everywhere.popup" timestamp="1597021389186">
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599078932816" />
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1599099009912">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="17" width="670" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597021389186" />
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599099009912" />
   </component>
 </project>
