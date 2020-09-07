@@ -12,6 +12,7 @@
                 <div class="col">
                     <h4 class="text-center">Acesse</h4>
                     <form class="text-center" style="width: 400px; margin:auto" action="/login/login" method="post">
+                        <input type="hidden" name="_csrf" value=<%= tokenCsrf%>>
                         <div class="form-group" >
                             <label for="exampleInputEmail1">Email</label>
                             <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="digite o email">
@@ -21,6 +22,9 @@
                             <label for="exampleInputPassword1">Senha</label>
                             <input type="password" class="form-control" name="password" placeholder="senha">
                         </div>
+                        <% if(errorsLogin.length > 0 || successLogin.length > 0){ %>
+                            <%-  include('includes/messages') %>
+                        <% } %>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
@@ -49,7 +53,11 @@
                             <input type="password" class="form-control" name="password" placeholder="senha">
                             <small id="emailHelp" class="form-text text-muted">Minimo de seis caracteres.</small>
                         </div>
-                        <%- include('includes/messages') %>
+
+                        <% if(errors.length > 0 || success.length > 0){ %>
+                        <%-  include('includes/messages') %>
+                        <% } %>
+
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck2">
                             <label class="form-check-label" for="exampleCheck2">Check me out</label>

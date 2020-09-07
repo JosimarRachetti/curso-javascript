@@ -1,7 +1,10 @@
 exports.meumiddleware = (req,res,next) =>{
     //o middleware consegue enviar uma variavel para todas as routes
     res.locals.errors = req.flash('errors');
+    res.locals.errorsLogin = req.flash('errorsLogin');
     res.locals.success = req.flash('success');
+    res.locals.successLogin = req.flash('successLogin');
+    res.locals.user = req.session.user;
     next();
 };
 

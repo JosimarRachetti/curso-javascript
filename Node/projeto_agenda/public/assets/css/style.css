@@ -1,0 +1,32 @@
+
+.btn-outline-success {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-success:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 50, 236, 0.3);
+}
+
+.btn-outline-success.disabled, .btn-outline-success:disabled {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
+.show > .btn-outline-success.dropdown-toggle {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-success.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 50, 236, 0.3);
+}

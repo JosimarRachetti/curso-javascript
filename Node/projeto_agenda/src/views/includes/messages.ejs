@@ -10,11 +10,35 @@
 </div>
 <% } %>
 
+<% if(errorsLogin.length > 0){ %>
+    <div class="row">
+        <div class="col my-3">
+            <div class="alert alert-danger" role="alert">
+                <% errorsLogin.forEach(erro =>{ %>
+                    <%= erro %>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+<% } %>
+
 <% if(success.length > 0){ %>
     <div class="row">
         <div class="col my-3">
             <div class="alert alert-success" role="alert">
                 <% success.forEach(suc =>{ %>
+                    <%= suc %>
+                <% }); %>
+            </div>
+        </div>
+    </div>
+<% } %>
+
+<% if(successLogin.length > 0){ %>
+    <div class="row">
+        <div class="col my-3">
+            <div class="alert alert-success" role="alert">
+                <% successLogin.forEach(suc =>{ %>
                     <%= suc %>
                 <% }); %>
             </div>
