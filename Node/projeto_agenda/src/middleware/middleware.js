@@ -5,6 +5,7 @@ exports.meumiddleware = (req,res,next) =>{
     res.locals.success = req.flash('success');
     res.locals.successLogin = req.flash('successLogin');
     res.locals.user = req.session.user;
+    res.locals.imagem = req.session.imagem;
     next();
 };
 
@@ -24,3 +25,12 @@ exports.checkCsrError = (err, req, res, next) => {
     }
     next();
 };
+
+exports.loginRequire = (requisicao, resposta, next) => {
+    if(!requisicao.session.user){
+        requisicao.flash('errors','Você precisa fazer login para cadastrar contato.');
+        requisicao.session.save(() => resposta.redirect('/'));
+        return;
+    }
+    next();
+}

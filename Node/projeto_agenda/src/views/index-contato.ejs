@@ -1,0 +1,46 @@
+<%- include('includes/header')%>
+<%- include('includes/navbar')%>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-8 my-5">
+            <h1 class="text-center">Contato</h1>
+            <p class="text-center lead">Crie ou Edite seu contato.</p>
+
+            <%-  include('includes/messages') %>
+            <% if(contato._id){ %>
+                <form class="text-center" action="/contato/edita/<%= contato._id %>" style="width: 400px; margin:auto"  method="post">
+            <% } else{ %>
+                <form class="text-center" action="/contato/register" style="width: 400px; margin:auto"  method="post">
+            <% } %>
+                <input type="hidden" name="_csrf" value=<%= tokenCsrf%>>
+                <div class="form-group" >
+                    <label>Nome</label>
+                    <input value="<%= contato.nome %>" class="form-control" name="nome" aria-describedby="emailHelp" placeholder="digite o nome de usuario">
+                </div>
+                <div class="form-group" >
+                    <label>Sobrenome</label>
+                    <input value="<%= contato.sobrenome %>"  class="form-control" name="sobrenome" aria-describedby="emailHelp" placeholder="digite o sobrenome de usuario">
+                </div>
+                <div class="form-group" >
+                    <label for="exampleInputEmail1">Email</label>
+                    <input value="<%= contato.email %>"  type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="digite o email">
+                    <small id="emailHelp" class="form-text text-muted">Nós não compartilharemos o email com ninguem.</small>
+                </div>
+                <div class="form-group" >
+                    <label for="exampleInputPassword1">Telefone</label>
+                    <input value="<%= contato.telefone %>"  type="tel" class="form-control" name="telefone" placeholder="telefone">
+                </div>
+                <button type="submit" class="btn btn-primary" style="border-color: #06d6a0; background-color: #06d6a0">Enviar</button>
+
+            </form>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+<%- include('includes/footer')%>

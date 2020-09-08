@@ -7,13 +7,12 @@ const middleware = require('./src/middleware/middleware').CsrfToken
 
 const homeController = require('./src/controllers/homeController')
 const loginController = require('./src/controllers/loginController')
-
+const contatoController = require('./src/controllers/contatoController')
+const {loginRequire} = require('./src/middleware/middleware')
 
 //Middleware é chamado no meio de uma requisição, é executado e depois segue para req original
 function meuMiddleware(req, res, next){
-
     console.log("passei no middleware");
-
     next();
 }
 
@@ -26,5 +25,11 @@ route.get('/login/index',loginController.index);
 route.post('/login/register',loginController.register);
 route.post('/login/login',loginController.login);
 route.get('/login/logout',loginController.logout);
+route.post('/login/upload',loginController.uploadDocument);
 
+//rotas contato
+route.get('/contato/index',loginRequire,contatoController.index);
+route.post('/contato/register',loginRequire,contatoController.register);
+route.get('/contato/register/:id',loginRequire,contatoController.editaContato);
+route.post('/contato/edita/:id',loginRequire,contatoController.edita);
 module.exports = route;

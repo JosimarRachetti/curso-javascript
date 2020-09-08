@@ -6,14 +6,28 @@
 
         <div class="col-lg-8 my-5">
             <div class="text-center">
-                <img src="./public/assets/imagens/user.png" class="rounded" alt="...">
                 <h1><%= user.nome %></h1>
+                <% if(!imagem){%>
+                <form action="/login/upload?_csrf=<%= tokenCsrf%>" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="_csrf" value=<%= tokenCsrf%>>
+                    <div class="text-center form-group">
+                        <label for="exampleFormControlFile1">Escolha sua foto da conta</label>
+                        <input type="file" class="form-control-file" name="imageUser" id="exampleFormControlFile1">
+                        <button type="submit" class="btn btn-primary" style="border-color: #06d6a0; background-color: #06d6a0">enviar</button>
+                    </div>
+                </form>
+                    <div class="alert alert-primary" role="alert">
+                        após enviar a foto atualize a pagina
+                    </div>
+                <%}else{%>
+                    <div class="text-center">
+                        <img src="<%= imagem%>" style="width: 150px; height: 150px;" class="rounded-circle" alt="...">
+                    </div>
+                <%}%>
+                <h2>Email: <%= user.email %></h2>
             </div>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlFile1">Foto sua conta</label>
-            <input type="file" class="form-control-file" name="imageUser" id="exampleFormControlFile1">
-        </div>
+
         <div class="col-lg-2"></div>
     </div>
 </div>
