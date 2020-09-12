@@ -1,6 +1,6 @@
 <%- include('includes/header')%>
+<div class="shadow p-3 mb-5 bg-white rounded" style="background-color: darkgrey">
 <%- include('includes/navbar')%>
-<div class="container">
     <div class="row">
         <div class="col-lg-2"></div>
 
@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col">
                     <h4 class="text-center">Acesse</h4>
-                    <form class="text-center" style="width: 400px; margin:auto" action="/login/login" method="post">
+                    <form class="text-center"  action="/login/login" method="post">
                         <input type="hidden" name="_csrf" value=<%= tokenCsrf%>>
                         <div class="form-group" >
                             <label for="exampleInputEmail1">Email</label>
@@ -37,7 +37,7 @@
             <div class="row" style="margin-top: 40px">
                 <div class="col">
                     <h4 class="text-center">Cadastre-se</h4>
-                    <form class="text-center" action="/login/register" style="width: 400px; margin:auto"  method="post">
+                    <form class="text-center" action="/login/register"   method="post">
                         <input type="hidden" name="_csrf" value=<%= tokenCsrf%>>
                         <div class="form-group" >
                             <label for="exampleInputEmail1">Email</label>
@@ -74,5 +74,6 @@
 
         <div class="col-lg-2"></div>
     </div>
-</div>
+
 <%- include('includes/footer')%>
+</div>

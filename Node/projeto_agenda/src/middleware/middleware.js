@@ -6,6 +6,7 @@ exports.meumiddleware = (req,res,next) =>{
     res.locals.successLogin = req.flash('successLogin');
     res.locals.user = req.session.user;
     res.locals.imagem = req.session.imagem;
+    res.locals.errorsUpload = req.flash('errorsUpload');
     next();
 };
 

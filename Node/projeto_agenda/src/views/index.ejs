@@ -1,37 +1,39 @@
 <%- include('includes/header')%>
+<div class="borda">
+<div class="shadow change p-3 mb-5 bg-white rounded" style="background-color: darkgrey">
 <%- include('includes/navbar')%>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-2"></div>
+    <div class="text-center">
 
-        <div class="col-lg-8 my-5">
-            <div class="text-center">
-            <h1>Agenda</h1>
-            <p>seus contatos estão abaixo.</p>
-            <%-  include('includes/messages') %>
-            </div>
-
-            <div class="responsive-table">
-                <table class="table">
+            <h2>Contatos</h2>
+            <%- include('includes/messages')%>
+            <% if(contatos.length > 0){%>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sobrenome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Telefone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <%console.log(contatos)%>
+                <% contatos.forEach( contato => { %>
                     <tr>
-                        <td>Josimar</td>
-                        <td>Rachetti</td>
-                        <td>+11 999999999</td>
-                        <td>josimar@email.com</td>
+                        <td><%= contato.nome %></td>
+                        <td><%= contato.sobrenome %></td>
+                        <td><%= contato.email %></td>
+                        <td><%= contato.telefone %></td>
+                        <td><a href="/contato/register/<%= contato._id %>">Editar</a></td>
+                        <td><a class="text-danger" href="/contato/delete/<%= contato._id %>">Excluir</a></td>
                     </tr>
-                    <tr>
-                        <td>Josimar</td>
-                        <td>Rachetti</td>
-                        <td>+11 999999999</td>
-                        <td>josimar@email.com</td>
-                    </tr>
-
-                </table>
-            </div>
-
-        </div>
-
-        <div class="col-lg-2"></div>
+                <% }) %>
+                </tbody>
+            </table>
+            <% } else { %>
+                <h3 class="text-center">sua agenda esta vazia</h3>
+            <% } %>
     </div>
-</div>
 <%- include('includes/footer')%>
+</div>
+</div>

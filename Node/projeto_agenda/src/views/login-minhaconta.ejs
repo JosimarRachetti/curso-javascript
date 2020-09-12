@@ -1,34 +1,44 @@
 <%- include('includes/header')%>
+<div class="shadow p-3 mb-5 bg-white rounded" style="background-color: darkgrey">
 <%- include('includes/navbar')%>
-<div class="container">
     <div class="row">
         <div class="col-lg-2"></div>
 
         <div class="col-lg-8 my-5">
             <div class="text-center">
-                <h1><%= user.nome %></h1>
+
                 <% if(!imagem){%>
                 <form action="/login/upload?_csrf=<%= tokenCsrf%>" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="_csrf" value=<%= tokenCsrf%>>
                     <div class="text-center form-group">
                         <label for="exampleFormControlFile1">Escolha sua foto da conta</label>
-                        <input type="file" class="form-control-file" name="imageUser" id="exampleFormControlFile1">
+                        <input style="padding: 10px" type="file" class="form-control-file" name="imageUser" id="exampleFormControlFile1">
                         <button type="submit" class="btn btn-primary" style="border-color: #06d6a0; background-color: #06d6a0">enviar</button>
                     </div>
                 </form>
+                    <%-  include('includes/messages') %>
                     <div class="alert alert-primary" role="alert">
-                        após enviar a foto atualize a pagina
+                        após enviar sua imagem atualize a pagina
                     </div>
                 <%}else{%>
                     <div class="text-center">
-                        <img src="<%= imagem%>" style="width: 150px; height: 150px;" class="rounded-circle" alt="...">
+                        <img src="<%= imagem%>" style="width: 150px; height: 150px;" class="rounded-circle border-dark" alt="...">
                     </div>
                 <%}%>
-                <h2>Email: <%= user.email %></h2>
+                    <dl class="row">
+                        <dt class="col-sm-3">Nome</dt>
+                        <dd class="col-sm-9"><%= user.nome %></dd>
+
+                        <dt class="col-sm-3">Email</dt>
+                        <dd class="col-sm-9">
+                            <p><%= user.email %></p>
+                        </dd>
+                    </dl>
+
             </div>
         </div>
 
         <div class="col-lg-2"></div>
     </div>
-</div>
 <%- include('includes/footer')%>
+</div>

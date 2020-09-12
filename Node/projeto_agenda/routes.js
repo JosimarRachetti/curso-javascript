@@ -26,10 +26,12 @@ route.post('/login/register',loginController.register);
 route.post('/login/login',loginController.login);
 route.get('/login/logout',loginController.logout);
 route.post('/login/upload',loginController.uploadDocument);
+route.get('/login/image', loginController.image);
 
 //rotas contato
 route.get('/contato/index',loginRequire,contatoController.index);
 route.post('/contato/register',loginRequire,contatoController.register);
 route.get('/contato/register/:id',loginRequire,contatoController.editaContato);
 route.post('/contato/edita/:id',loginRequire,contatoController.edita);
+route.get('/contato/delete/:id',loginRequire,contatoController.delete);
 module.exports = route;

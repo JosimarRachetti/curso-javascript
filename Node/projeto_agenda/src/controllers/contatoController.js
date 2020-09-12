@@ -54,3 +54,12 @@ exports.edita = async (requisicao, resposta) => {
     }
 
 }
+
+exports.delete = async (requisicao,resposta) => {
+    if(!requisicao.params.id) return resposta.render('404');
+    const contato = await Contato.delete(requisicao.params.id);
+
+    if(!contato) return resposta.render('404');
+    requisicao.flash('success',"Contato foi apagado com sucesso.");
+    requisicao.session.save(() => resposta.redirect(`back`));
+};

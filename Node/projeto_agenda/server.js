@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 //conexao na base de dados do mongo
 const mongoose = require('mongoose');
-mongoose.connect(process.env.CONNECTIONSTRING,{ useNewUrlParser: true, useUnifiedTopology:true})
+mongoose.connect(process.env.CONNECTIONSTRING,{ useNewUrlParser: true, useUnifiedTopology:true, useFindAndModify:false})
     .then(()=>{ 
         //com then e a função emit o servidor so começar rodar quando se conectar a base de dados mongo
         console.log('servidor pronto');
@@ -39,7 +39,7 @@ const sessionOptions = session({
 app.use(sessionOptions);
 app.use(flash());
 //configurando o caminho da pasta public onde estarao os arquivos css, imagens, entre outros..
-app.use(express.static(path.resolve(__dirname,'public')));
+app.use(express.static(__dirname+'/public'));
 app.use(express.urlencoded({extended:true}));
 //configurando o caminho da views
 app.set('views',path.resolve(__dirname,'src','views'));

@@ -19,6 +19,7 @@ class UploadFile {
             idUser: this.id,
             foto: this.foto
         }
+
         this.uplo = await UploadModel.create(this.body);
 
     }

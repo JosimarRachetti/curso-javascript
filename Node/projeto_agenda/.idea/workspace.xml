@@ -20,14 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1125d237-da8e-49b5-ba28-1e1f9345d8a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controllers/contatoController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/contatoController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/contatoController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/homeController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/homeController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/loginController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/loginController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/middleware/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/ContatoModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/ContatoModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/UploadModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UploadModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/includes/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/includes/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/includes/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/includes/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/includes/messages.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/includes/messages.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/includes/navbar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/includes/navbar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index-contato.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index-contato.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/login-minhaconta.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login-minhaconta.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/login.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/login.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +97,10 @@
       <workItem from="1599007578523" duration="2975000" />
       <workItem from="1599069885050" duration="22652000" />
       <workItem from="1599269886931" duration="44578000" />
-      <workItem from="1599508510571" duration="18096000" />
+      <workItem from="1599508510571" duration="18358000" />
+      <workItem from="1599570144760" duration="32455000" />
+      <workItem from="1599690764157" duration="13838000" />
+      <workItem from="1599788717505" duration="2598000" />
     </task>
     <servers />
   </component>
@@ -138,17 +151,22 @@
     </state>
     <state x="-846" y="161" key="FileChooserDialogImpl/0.0.1366.728/-1280.0.1280.984@-1280.0.1280.984" timestamp="1599508503130" />
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599415854501" />
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599442396132">
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599701016866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1599442396132" />
+    <state x="-967" y="0" width="983" height="667" key="dock-window-1" timestamp="1599571234005">
+      <screen x="-1280" y="0" width="1280" height="984" />
+    </state>
+    <state x="-967" y="0" width="983" height="667" key="dock-window-1/0.0.1366.728/-1280.0.1280.984@-1280.0.1280.984" timestamp="1599571234005" />
     <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1599445900142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1599445900142" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1599078932816">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-962" y="219" key="run.anything.popup" timestamp="1599700678761">
+      <screen x="-1280" y="0" width="1280" height="984" />
     </state>
+    <state x="-962" y="219" key="run.anything.popup/0.0.1366.728/-1280.0.1280.984@-1280.0.1280.984" timestamp="1599700678761" />
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599078932816" />
     <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1599099009912">
       <screen x="0" y="0" width="1366" height="728" />

@@ -1,32 +1,48 @@
+body, html{
+    height:100%;}
 
-.btn-outline-success {
-    color: #ffffff;
-    border-color: #ffffff;
-}
-
-.btn-outline-success:hover {
-    color: #000000;
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
-
-.btn-outline-success:focus, .btn-outline-success.focus {
-    box-shadow: 0 0 0 0.2rem rgba(13, 50, 236, 0.3);
-}
-
-.btn-outline-success.disabled, .btn-outline-success:disabled {
-    color: #ffffff;
+.nav-link{
+    padding: .25rem;
+    font-weight: 700;
+    color: rgba(000, 000, 000, .5);
     background-color: transparent;
+    border-bottom: .25rem solid transparent;}
+
+.corpo{
+    background: linear-gradient(to bottom, #6600cc 0%, #ff6600 100%);
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background-size: cover;
 }
 
-.btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
-.show > .btn-outline-success.dropdown-toggle {
-    color: #000000;
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
+@media only screen and (min-width: 100px) and  (max-width: 500px){
 
-.btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-success.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(13, 50, 236, 0.3);
+    .table tbody{
+        padding-right: 100px;
+    }
+    .table td{
+        width: 10px;
+        padding: 0px;
+        font-size: x-small;
+    }
+
+    .table th{
+        width: 10px;
+        padding: 0px;
+        font-size: x-small;
+    }
+
+    .change{
+        width: 400px;
+    }
+
 }
