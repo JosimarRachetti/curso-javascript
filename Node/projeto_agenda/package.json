@@ -23,7 +23,7 @@
     "express-session": "^1.17.1",
     "formidable": "^1.2.2",
     "helmet": "^4.0.0",
-    "mongoose": "^5.9.21",
+    "mongoose": "^5.10.5",
     "regenerator-runtime": "^0.13.5",
     "style-loader": "^1.2.1",
     "validator": "^13.1.1"

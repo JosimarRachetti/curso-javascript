@@ -24,7 +24,7 @@ body, html{
     background-size: cover;
 }
 
-@media only screen and (min-width: 100px) and  (max-width: 500px){
+@media only screen and (min-width: 10px) and  (max-width: 500px){
 
     .table tbody{
         padding-right: 100px;
@@ -45,4 +45,24 @@ body, html{
         width: 400px;
     }
 
+}
+
+@media only screen and (min-width: 500px) and  (max-width: 620px){
+
+
+    .table td{
+        width: 10px;
+        padding: 10px;
+        font-size: small;
+    }
+
+    .table th{
+        width: 10px;
+        padding: 0px;
+        font-size: small;
+    }
+
+    .change{
+        width: 500px;
+    }
 }
