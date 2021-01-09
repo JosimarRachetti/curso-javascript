@@ -1,0 +1,25 @@
+* {
+  margin:0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#483D8B,#4EF569) no-repeat bottom center scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
+button {
+  cursor: pointer;
+}
+
+
