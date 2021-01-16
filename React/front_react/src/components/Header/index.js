@@ -2,9 +2,13 @@
 import React from 'react';
 import { FaHome, FaUserAlt, FaSignInAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { Nav } from './styled';
 
 export default function Headers() {
+  const botaoClicado = useSelector(
+    (state) => state.exemploReducer.botaoClicado
+  );
   return (
     <Nav>
       <Link to="/">
@@ -16,6 +20,7 @@ export default function Headers() {
       <Link to="/logout">
         <FaSignInAlt size={24} />
       </Link>
+      {botaoClicado ? 'clicado' : 'Nao clicado'}
     </Nav>
   );
 }
